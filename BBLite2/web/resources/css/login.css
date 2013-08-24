@@ -1,0 +1,43 @@
+/* 
+    Document   : login
+    Created on : Dec 14, 2012, 1:40:14 PM
+    Author     : Jan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+input{  
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    background: #FFFFFF;  
+}  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {  
+    border-color: #C9C9C9;  
+}  
+
+body, form{
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient:vertical;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-orient:vertical;
+    box-pack:center;
+    box-align:center;
+} 

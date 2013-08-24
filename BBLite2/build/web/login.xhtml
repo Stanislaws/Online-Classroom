@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>BBLite Login</title>
+        <h:outputStylesheet name="login.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h:graphicImage name="BBLite.png" library="image"/>
+        <h:form>
+            <h:outputText value="#{process_Login.response}"/>
+            <h:panelGrid columns="2">
+                <h:outputLabel for="username" value="Username:"/>
+                <h:inputText id="username" value="#{process_Login.username}" 
+                             required="true"
+                             requiredMessage="Username is required."/>
+                <h:outputLabel for="password" value="Password:"/>
+                <h:inputSecret id="password" value="#{process_Login.password}" 
+                             required="true"
+                             requiredMessage="Password is required."/>
+            </h:panelGrid>
+            <h:commandButton value="Submit" type="submit"/>
+            <h:commandButton value="Reset" type="reset"/>
+        </h:form>
+    </h:body>
+</html>
